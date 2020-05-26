@@ -1,0 +1,52 @@
+// sass-lint:disable nesting-depth
+// sass-lint:disable no-vendor-prefixes
+
+$selected-tab: #00f
+$validated-tab: #008000
+$input-error: #f00
+
+.main
+  font-family: Arial, Comic Sans MS, Comic Sans, cursive
+  font-size: 1em
+  margin: 30px
+
+.page-tab
+  margin-bottom: 25px
+
+  span
+    font-weight: 800
+    margin-right: 30px
+
+  .selected
+    border-bottom: 1px solid $selected-tab
+
+  .validated
+    color: $validated-tab
+
+.form
+  > div
+    margin-bottom: 10px
+
+  > div > input
+    border: 0
+    border-bottom: 1px solid $selected-tab
+    display: inline-block
+    font-size: 100%
+    margin-left: 1em
+    vertical-align: bottom
+
+    &.input-error
+      border-bottom: 1px solid $input-error
+
+  .is-required
+    color: $input-error
+    font-size: 90%
+
+  .error-text
+    color: $input-error
+    font-size: 60%
+
+  .input-label
+    display: inline-block
+    max-width: 6em
+    min-width: 6em
